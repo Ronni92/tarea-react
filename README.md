@@ -1,8 +1,10 @@
-Ecuador
-<img src="https://github.com/user-attachments/assets/e511abd3-9953-4b1e-b52e-98a3fa18314a"
-     alt="Logo Selección Ecuatoriana"
-     width="440">
+<h1 align="center">🎉 Ecuador</h1>
 
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/e511abd3-9953-4b1e-b52e-98a3fa18314a"
+       alt="Selección Ecuatoriana"
+       width="440">
+</p>
 Selección Ecuatoriana
 
 Aplicación móvil desarrollada con React Native y Expo que muestra información de la Selección Ecuatoriana de Fútbol. Incluye pantalla de bienvenida con el logo oficial y una pantalla principal con datos del equipo.
