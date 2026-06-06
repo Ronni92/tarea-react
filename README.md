@@ -3,17 +3,17 @@ Selección Ecuatoriana de Fútbol - App Móvil
 Aplicación móvil desarrollada con React Native y Expo que muestra información de la Selección Ecuatoriana de Fútbol. Incluye pantalla de bienvenida con el logo oficial y una pantalla principal con datos del equipo.
 
 Estructura proyecto 
-seleccion-ecuatoriana/
-├── app/                    # Sistema de enrutamiento por archivos
-│   ├── _layout.js         # Configuración de navegación global
-│   ├── index.js           # Pantalla de bienvenida (Splash Screen)
-│   └── home.js            # Pantalla principal con información
-├── assets/                 # Recursos estáticos
-│   └── images/            # Imágenes (logo, íconos)
-│       └── logo-ecuador.png
-├── app.json               # Configuración de la app (nombre, íconos, splash)
-├── package.json           # Dependencias y scripts
-└── babel.config.js        # Configuración de Babel (transpilador JS)
+| Archivo/Directorio | Descripción                                                        |
+| ------------------ | ------------------------------------------------------------------ |
+| `app/`             | Contiene las pantallas y rutas de la aplicación.                   |
+| `_layout.js`       | Define la estructura y navegación global.                          |
+| `index.js`         | Pantalla inicial mostrada al iniciar la aplicación.                |
+| `home.js`          | Pantalla principal con la información de la Selección Ecuatoriana. |
+| `assets/images/`   | Almacena imágenes y recursos gráficos.                             |
+| `logo-ecuador.png` | Logotipo utilizado en la interfaz de la aplicación.                |
+| `app.json`         | Configuración general de Expo y metadatos de la aplicación.        |
+| `package.json`     | Gestión de dependencias y scripts de ejecución.                    |
+| `babel.config.js`  | Configuración del transpiler Babel para JavaScript.                |
 
 Funcionamiento el contexto de tunnel
 Sin Tunnel (modo LAN):
