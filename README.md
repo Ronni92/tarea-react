@@ -54,12 +54,13 @@ Flujo completo
 
  Tecnologías utilizadas
 
-| Tecnología | Versión | Propósito |
-|------------|---------|-----------|
-| React Native | 0.74.5 | Framework para apps móviles |
-| Expo | 54.0.0 | Plataforma de desarrollo |
-| Expo Router | 4.0.0 | Navegación por archivos |
-| Expo Splash Screen | 0.29.0 | Pantalla de bienvenida |
+| Componente         | Versión | Función en el Proyecto                                                                     |
+| ------------------ | ------- | ------------------------------------------------------------------------------------------ |
+| React Native       | 0.74.5  | Base principal para la construcción de la interfaz móvil multiplataforma.                  |
+| Expo               | 54.0.0  | Entorno de desarrollo que proporciona herramientas para compilación, pruebas y despliegue. |
+| Expo Router        | 4.0.0   | Gestión de navegación entre pantallas mediante enrutamiento basado en archivos.            |
+| Expo Splash Screen | 0.29.0  | Personalización y administración de la pantalla de carga inicial de la aplicación.         |
+
 
 Requisitos previos
 
