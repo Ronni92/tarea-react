@@ -1,54 +1,84 @@
-<<<<<<< HEAD
-# Welcome to your Expo app 👋
+Selección Ecuatoriana de Fútbol - App Móvil
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicación móvil desarrollada con React Native y Expo que muestra información de la Selección Ecuatoriana de Fútbol. Incluye pantalla de bienvenida con el logo oficial y una pantalla principal con datos del equipo.
 
-## Get started
+Estructura proyecto 
+seleccion-ecuatoriana/
+├── app/                    # Sistema de enrutamiento por archivos
+│   ├── _layout.js         # Configuración de navegación global
+│   ├── index.js           # Pantalla de bienvenida (Splash Screen)
+│   └── home.js            # Pantalla principal con información
+├── assets/                 # Recursos estáticos
+│   └── images/            # Imágenes (logo, íconos)
+│       └── logo-ecuador.png
+├── app.json               # Configuración de la app (nombre, íconos, splash)
+├── package.json           # Dependencias y scripts
+└── babel.config.js        # Configuración de Babel (transpilador JS)
 
-1. Install dependencies
+Funcionamiento el contexto de tunnel
+Sin Tunnel (modo LAN):
+PC (IP local) ←→ Router WiFi ←→ Teléfono
+❌ Puede fallar si la red bloquea dispositivos
 
-   ```bash
-   npm install
-   ```
+Con Tunnel:
+PC ←→ Servidores Expo (internet) ←→ Teléfono
+✅ Funciona en cualquier red
 
-2. Start the app
+Características
 
-   ```bash
-   npx expo start
-   ```
+- Pantalla de bienvenida (Splash Screen) con logo de Ecuador
+- Navegación automática después de 3 segundos
+- Botón "Ingresar" para navegación manual
+- Pantalla de inicio con información:
+  - Información general (asociación, confederación, estadio)
+  - Logros destacados en mundiales
+  - Lista de jugadores destacados
+-  Diseño responsivo con colores de la bandera (#FFD700, #003399, #ED2E38)
+-  Compatible con Android e iOS
 
-In the output, you'll find options to open the app in a
+Flujo completo 
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. Usuario abre Expo Go y escanea QR
+   ↓
+2. Expo muestra su splash screen temporal
+   ↓
+3. Se carga nuestra app (index.js)
+   ↓
+4. Pantalla amarilla con logo de Ecuador
+   ↓
+5. Espera 3 segundos O usuario presiona "Ingresar"
+   ↓
+6. Navega a home.js
+   ↓
+7. Muestra información del equipo en tarjetas
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+ Tecnologías utilizadas
 
-## Get a fresh project
+| Tecnología | Versión | Propósito |
+|------------|---------|-----------|
+| React Native | 0.74.5 | Framework para apps móviles |
+| Expo | 54.0.0 | Plataforma de desarrollo |
+| Expo Router | 4.0.0 | Navegación por archivos |
+| Expo Splash Screen | 0.29.0 | Pantalla de bienvenida |
 
-When you're ready, run:
+Requisitos previos
 
-```bash
-npm run reset-project
-```
+- Node.js (versión 18 o superior)
+- npm o yarn
+- Expo Go instalado en tu teléfono móvil
+  - [Android - Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Solución de problemas comunes
+Error: "Cannot find module 'babel-preset-expo'"
+npm install babel-preset-expo@~54.0.10 --save-dev
 
-## Learn more
+ Instalación
 
-To learn more about developing your project with Expo, look at the following resources:
+instalar dependencia
+npm install
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Para solucionar el problema de ejecutar la aplicación desde el cecular usar modo tunnel
+npx expo start --tunnel
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-=======
-# tarea-react
->>>>>>> 7644dd22964fbbe8a9a4b35e9e7d3c8ff157279c
+ejecutar aplicación
+npx expo start --tunnel
