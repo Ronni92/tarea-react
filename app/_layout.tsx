@@ -5,7 +5,17 @@ export default function Layout() {
   return (
     <>
       <StatusBar style="auto" />
-      <Stack>
+      <Stack
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: '#FFCC00',
+          },
+          headerTintColor: '#003DA5',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+      >
         <Stack.Screen 
           name="index" 
           options={{ 

@@ -7,22 +7,22 @@ export default function SplashScreenComponent() {
     // Navegar después de 3 segundos a la pantalla de inicio
     const timer = setTimeout(() => {
       router.replace('/home');
-    }, 3000);
+    }, 3000); // 3 segundos como pide el requisito
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <View style={styles.container}>
-      {/* Logo de la Selección Ecuatoriana - USANDO TU IMAGEN LOCAL */}
+      {/* Logo oficial centrado */}
       <Image
         source={require('../assets/images/logo-ecuador.png')}
         style={styles.logo}
         resizeMode="contain"
       />
       
-      <Text style={styles.title}>Selección Ecuatoriana</Text>
-      <Text style={styles.subtitle}>La Tricolor</Text>
+      {/* Texto exacto que pide: "Ecuador - La Tri" */}
+      <Text style={styles.title}>Ecuador - La Tri</Text>
       
       <TouchableOpacity 
         style={styles.button}
@@ -37,7 +37,7 @@ export default function SplashScreenComponent() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFD700', // Amarillo
+    backgroundColor: '#FFCC00', // Color amarillo que pide el requisito
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
@@ -50,18 +50,12 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#003399', // Azul
-    marginBottom: 10,
-    textAlign: 'center',
-  },
-  subtitle: {
-    fontSize: 18,
-    color: '#ED2E38', // Rojo
+    color: '#003DA5', // Azul que pide el requisito
     marginBottom: 50,
     textAlign: 'center',
   },
   button: {
-    backgroundColor: '#003399',
+    backgroundColor: '#003DA5',
     paddingHorizontal: 40,
     paddingVertical: 12,
     borderRadius: 25,
