@@ -9,7 +9,7 @@ Selección Ecuatoriana
 
 Aplicación móvil desarrollada con React Native y Expo que muestra información de la Selección Ecuatoriana de Fútbol. Incluye pantalla de bienvenida con el logo oficial y una pantalla principal con datos del equipo.
 
-Estructura proyecto 
+📂 Estructura proyecto 
 | Archivo/Directorio | Descripción                                                        |
 | ------------------ | ------------------------------------------------------------------ |
 | `app/`             | Contiene las pantallas y rutas de la aplicación.                   |
@@ -22,7 +22,7 @@ Estructura proyecto
 | `package.json`     | Gestión de dependencias y scripts de ejecución.                    |
 | `babel.config.js`  | Configuración del transpiler Babel para JavaScript.                |
 
-Funcionamiento el contexto de tunnel
+✨Funcionamiento el contexto de tunnel
 Sin Tunnel (modo LAN):
 PC (IP local) ←→ Router WiFi ←→ Teléfono
 ❌ Puede fallar si la red bloquea dispositivos
@@ -31,7 +31,7 @@ Con Tunnel:
 PC ←→ Servidores Expo (internet) ←→ Teléfono
 ✅ Funciona en cualquier red
 
-Características
+📄Características
 
 - Pantalla de bienvenida (Splash Screen) con logo de Ecuador
 - Navegación automática después de 3 segundos
@@ -59,7 +59,7 @@ Flujo completo
    ↓
 7. Muestra información del equipo en tarjetas
 
- Tecnologías utilizadas
+🛠️ Tecnologías utilizadas
 
 | Componente         | Versión | Función en el Proyecto                                                                     |
 | ------------------ | ------- | ------------------------------------------------------------------------------------------ |
@@ -69,7 +69,7 @@ Flujo completo
 | Expo Splash Screen | 0.29.0  | Personalización y administración de la pantalla de carga inicial de la aplicación.         |
 
 
-Requisitos previos
+📖 Requisitos previos
 
 - Node.js (versión 18 o superior)
 - npm o yarn
@@ -80,7 +80,7 @@ Solución de problemas comunes
 Error: "Cannot find module 'babel-preset-expo'"
 npm install babel-preset-expo@~54.0.10 --save-dev
 
- Instalación
+🚀  Instalación
 
 instalar dependencia
 npm install
@@ -88,5 +88,5 @@ npm install
 Para solucionar el problema de ejecutar la aplicación desde el cecular usar modo tunnel
 npx expo start --tunnel
 
-ejecutar aplicación
+📱 ejecutar aplicación
 npx expo start --tunnel
