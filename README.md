@@ -1,54 +1,92 @@
-<<<<<<< HEAD
-# Welcome to your Expo app 👋
+<h1 align="left">🎉Ecuador</h1>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/e511abd3-9953-4b1e-b52e-98a3fa18314a"
+       alt="Selección Ecuatoriana"
+       width="240">
+</p>
+Selección Ecuatoriana
 
-## Get started
+Aplicación móvil desarrollada con React Native y Expo que muestra información de la Selección Ecuatoriana de Fútbol. Incluye pantalla de bienvenida con el logo oficial y una pantalla principal con datos del equipo.
 
-1. Install dependencies
+📂 Estructura proyecto 
+| Archivo/Directorio | Descripción                                                        |
+| ------------------ | ------------------------------------------------------------------ |
+| `app/`             | Contiene las pantallas y rutas de la aplicación.                   |
+| `_layout.js`       | Define la estructura y navegación global.                          |
+| `index.js`         | Pantalla inicial mostrada al iniciar la aplicación.                |
+| `home.js`          | Pantalla principal con la información de la Selección Ecuatoriana. |
+| `assets/images/`   | Almacena imágenes y recursos gráficos.                             |
+| `logo-ecuador.png` | Logotipo utilizado en la interfaz de la aplicación.                |
+| `app.json`         | Configuración general de Expo y metadatos de la aplicación.        |
+| `package.json`     | Gestión de dependencias y scripts de ejecución.                    |
+| `babel.config.js`  | Configuración del transpiler Babel para JavaScript.                |
 
-   ```bash
-   npm install
-   ```
+✨Funcionamiento el contexto de tunnel
+Sin Tunnel (modo LAN):
+PC (IP local) ←→ Router WiFi ←→ Teléfono
+❌ Puede fallar si la red bloquea dispositivos
 
-2. Start the app
+Con Tunnel:
+PC ←→ Servidores Expo (internet) ←→ Teléfono
+✅ Funciona en cualquier red
 
-   ```bash
-   npx expo start
-   ```
+📄Características
 
-In the output, you'll find options to open the app in a
+- Pantalla de bienvenida (Splash Screen) con logo de Ecuador
+- Navegación automática después de 3 segundos
+- Botón "Ingresar" para navegación manual
+- Pantalla de inicio con información:
+  - Información general (asociación, confederación, estadio)
+  - Logros destacados en mundiales
+  - Lista de jugadores destacados
+-  Diseño responsivo con colores de la bandera (#FFD700, #003399, #ED2E38)
+-  Compatible con Android e iOS
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Flujo completo 
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1. Usuario abre Expo Go y escanea QR
+   ↓
+2. Expo muestra su splash screen temporal
+   ↓
+3. Se carga nuestra app (index.js)
+   ↓
+4. Pantalla amarilla con logo de Ecuador
+   ↓
+5. Espera 3 segundos O usuario presiona "Ingresar"
+   ↓
+6. Navega a home.js
+   ↓
+7. Muestra información del equipo en tarjetas
 
-## Get a fresh project
+🛠️ Tecnologías utilizadas
 
-When you're ready, run:
+| Componente         | Versión | Función en el Proyecto                                                                     |
+| ------------------ | ------- | ------------------------------------------------------------------------------------------ |
+| React Native       | 0.74.5  | Base principal para la construcción de la interfaz móvil multiplataforma.                  |
+| Expo               | 54.0.0  | Entorno de desarrollo que proporciona herramientas para compilación, pruebas y despliegue. |
+| Expo Router        | 4.0.0   | Gestión de navegación entre pantallas mediante enrutamiento basado en archivos.            |
+| Expo Splash Screen | 0.29.0  | Personalización y administración de la pantalla de carga inicial de la aplicación.         |
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+📖 Requisitos previos
 
-## Learn more
+- Node.js (versión 18 o superior)
+- npm o yarn
+- Expo Go instalado en tu teléfono móvil
+  - [Android - Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent)
 
-To learn more about developing your project with Expo, look at the following resources:
+Solución de problemas comunes
+Error: "Cannot find module 'babel-preset-expo'"
+npm install babel-preset-expo@~54.0.10 --save-dev
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+🚀  Instalación
 
-## Join the community
+instalar dependencia
+npm install
 
-Join our community of developers creating universal apps.
+Para solucionar el problema de ejecutar la aplicación desde el cecular usar modo tunnel
+npx expo start --tunnel
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-=======
-# tarea-react
->>>>>>> 7644dd22964fbbe8a9a4b35e9e7d3c8ff157279c
+📱 ejecutar aplicación
+npx expo start --tunnel
